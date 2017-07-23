@@ -2,8 +2,6 @@
 
 import logging
 
-from . import ops
-
 
 class Graph(object):
     def __init__(self):

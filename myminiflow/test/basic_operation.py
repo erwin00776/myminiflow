@@ -1,4 +1,4 @@
-from myminiflow import myminiflow as tf
+import myminiflow as tf
 
 if __name__ == '__main__':
     a = tf.constant(10)
