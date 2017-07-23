@@ -7,6 +7,12 @@ class Session(object):
     def __init__(self):
         pass
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        pass
+
     def run(self, op, feed_dict=None, options=None):
         name_to_op = op._graph.get_name_op_map()
         if feed_dict is not None:
